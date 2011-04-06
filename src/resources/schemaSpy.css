@@ -1,8 +1,13 @@
+/*dark blue 161F2E*/
+
+/*pallet for previous color found on website */
+/* darker to lighter #00143A #00245E #001852 #3A5C75 #84A5C3 */
+
 /* required colors MUST be specified in RGB hex notation or the diagrams won't have correct colors */
 
 body  {
   color: #000;
-  background-color: #F7F7F7;
+  background-color: #FFFFFF;
   font-family: arial, geneva, helvetica, lucida, sans-serif;
   margin: 0 0 0 0;
   padding: 0px;
@@ -11,14 +16,14 @@ body  {
 /* background must be specified for it to propagate into diagrams */
 .content {
   margin: 0px;
-  background: #F7F7F7;
+  background: #FFFFFF;
   border: 0 0;
   padding:.4em;
 }
 
 /* background-color must be specified for th to propagate into diagrams */
 th {
-  background-color: #9BAB96;
+  background-color: #84A5C3;
   text-align: left;
   padding: 0px 4px;
 }
@@ -32,7 +37,7 @@ tr.even td.detail {
 }
 
 tr.odd td.detail {
-  background-color: #F7F7F7;
+  background-color: #FFFFFF;
 }
 
 h1 {
@@ -41,13 +46,13 @@ h1 {
 
 /* background must be specified for .primaryKey to propagate into diagrams */
 .primaryKey {
-  background: #BED1B8;
+  background: #84A5C3;
   padding: 0px 4px;
 }
 
 /* background must be specified for .indexedColumn to propagate into diagrams */
 .indexedColumn {
-  background: #F4F7DA;
+  background: #FFFFFF;
   padding: 0px 4px;
 }
 
@@ -59,7 +64,7 @@ h1 {
 
 /* background must be specified for .selectedTable to propagate into diagrams */
 .selectedTable {
-  background: #A9AB96;
+  background: #3A5C75;
 }
 
 .detail {
@@ -74,12 +79,12 @@ table {
 .impliedRelationship {
   display: none;
   font-style: italic;
-  color: #183118
+  color: #001852
 }
 
 .dataTable {
   font-size: 85%;
-  background-color: #F7F7F7;
+  background-color: #FFFFFF;
 }
 
 .heading {
@@ -107,7 +112,7 @@ table {
 }
 
 .container {
-  background-color: #F7F7F7;
+  background-color: #FFFFFF;
   padding: 0px 0px;
 }
 
@@ -117,7 +122,7 @@ table {
 }
 
 .legendDetail {
-  background-color: #F7F7F7;
+  background-color: #FFFFFF;
   padding: 0px 4px;
 
   font-style: normal;
@@ -165,15 +170,15 @@ table {
 }
 
 a:link {
-  color: #489148;
+  color: #00245E;
 }
 
 a:visited {
-  color: #183118;
+  color: #00143A;
 }
 
 .sortedByColumn {
-  background-color: #6C7769;
+  background-color: #001852;
 }
 
 .notSortedByColumn {
@@ -217,7 +222,7 @@ div.spacer {
 #header {
   float:left;
   width: 100%;
-  background:#BED1B8 url("images/background.gif") repeat-x bottom;
+  background:#84A5C3 repeat-x bottom;
   font-size:80%;
   line-height:normal;
 }
@@ -230,7 +235,7 @@ div.spacer {
 
 #header li {
   float:left;
-  background:url("images/tabLeft.gif") no-repeat left top;
+  background: no-repeat left top;
   margin:0;
   padding:0 0 0 9px;
   border-bottom:1px solid #000;
@@ -240,11 +245,11 @@ div.spacer {
   float:left;
   display:block;
   width:.1em;
-  background:url("images/tabRight.gif") no-repeat right top;
+  background: no-repeat right top;
   padding:5px 10px 4px 1px;
   text-decoration:none;
   font-weight:bold;
-  color:#F4F7DA;
+  color:#FFFFFF;
 }
 
 #header > ul a {width:auto;}
@@ -269,7 +274,7 @@ div.spacer {
 
 #header li:hover, #header li:hover a {
   background-position:0% -150px;
-  color:#9BAB96;
+  color:#00143A;
 }
 
 #header li:hover a {

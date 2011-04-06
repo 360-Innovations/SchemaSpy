@@ -110,8 +110,7 @@ public class HtmlFormatter
 	}
 
 	protected void writeGeneratedBy(String connectTime, LineWriter html) throws IOException
-	{
-	}
+	{}
 
 	protected void writeTableOfContents(boolean showOrphans, LineWriter html) throws IOException
 	{
@@ -183,11 +182,6 @@ public class HtmlFormatter
 		return description.toString();
 	}
 
-	protected boolean sourceForgeLogoEnabled()
-	{
-		return Config.getInstance().isLogoEnabled();
-	}
-
 	protected void writeLegend(boolean tableDetails, LineWriter out) throws IOException
 	{
 		writeLegend(tableDetails, true, out);
@@ -196,10 +190,11 @@ public class HtmlFormatter
 	protected void writeLegend(boolean tableDetails, boolean diagramDetails, LineWriter out) throws IOException
 	{
 		out.writeln(" <table class='legend' border='0'>");
+		out.writeln("  <tr>" + Config.getInstance().getApplicationName() + "</tr>");
+		out.writeln("  <tr><td class='container' align='right' valign='top'><a href='" + Config.getInstance().getWebsiteURL() + "' target='_blank'><img src='"
+				+ Config.getInstance().getLogoURL() + "' alt='" + Config.getInstance().getCompanyName() + "' border='0' height='60'></a></td></tr>");
 		out.writeln("  <tr>");
 		out.writeln("   <td class='dataTable' valign='bottom'>Legend:</td>");
-		if (sourceForgeLogoEnabled())
-			out.writeln("   <td class='container' align='right' valign='top'><a href='" + Config.getInstance().getWebsiteURL() + "' target='_blank'><img src='" + Config.getInstance().getLogoURL() + "' alt='" + Config.getInstance().getCompanyName() + "' border='0' " /*height='31' width='88'*/ + "></a></td>");
 		out.writeln("  </tr>");
 		out.writeln("  <tr><td class='container' colspan='2'>");
 		out.writeln("   <table class='dataTable' border='1'>");
@@ -226,8 +221,7 @@ public class HtmlFormatter
 	}
 
 	protected void writeFeedMe(LineWriter html) throws IOException
-	{
-	}
+	{}
 
 	protected void writeExcludedColumns(Set<TableColumn> excludedColumns, Table table, LineWriter html) throws IOException
 	{
