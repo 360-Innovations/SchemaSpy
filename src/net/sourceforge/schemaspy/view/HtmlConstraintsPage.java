@@ -26,6 +26,8 @@ import java.util.List;
 import java.util.Map;
 import java.util.Set;
 import java.util.TreeSet;
+
+import net.sourceforge.schemaspy.Config;
 import net.sourceforge.schemaspy.DbAnalyzer;
 import net.sourceforge.schemaspy.model.Database;
 import net.sourceforge.schemaspy.model.ForeignKeyConstraint;
@@ -94,7 +96,7 @@ public class HtmlConstraintsPage extends HtmlFormatter {
         html.writeln("</td><td class='container' align='right'>");
         html.writeln("<table>");
         if (sourceForgeLogoEnabled())
-            html.writeln("  <tr><td class='container' align='right' valign='top'><a href='http://sourceforge.net' target='_blank'><img src='http://sourceforge.net/sflogo.php?group_id=137197&amp;type=1' alt='SourceForge.net' border='0' height='31' width='88'></a></td></tr>");
+            html.writeln("  <tr><td class='container' align='right' valign='top'><a href='" + Config.getInstance().getWebsiteURL() + "' target='_blank'><img src='" + Config.getInstance().getLogoURL() + "' alt='" + Config.getInstance().getCompanyName() + "' border='0' " /*height='31' width='88'*/ + "></a></td></tr>");
         html.writeln("<tr><td class='container'>");
         writeFeedMe(html);
         html.writeln("</td></tr></table>");
